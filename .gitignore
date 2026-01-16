@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+*.pyc
+
+# Power BI
+*.pbix
+*.pbit
+
+# Banco de Dados
+*.mdf
+*.ldf
+*.bak
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE/Editores
+.vscode/
+.idea/
