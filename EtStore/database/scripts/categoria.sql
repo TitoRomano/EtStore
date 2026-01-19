@@ -1,6 +1,0 @@
-CREATE TABLE Categorias (
-	CategoriasID INT IDENTITY(1,1) PRIMARY KEY,
-	NomeCategoria VARCHAR(50) NOT NULL,
-	Descricao VARCHAR(200),
-	DataCadastro DATETIME DEFAULT GETDATE()
-);

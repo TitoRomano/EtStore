@@ -1,18 +1,30 @@
+cd ~/EtStor
+
+# Crie um .gitignore ESPECÍFICO para SSMS/Visual Studio
+cat > .gitignore << 'EOF'
+# SSMS 22 / Visual Studio
+.vs/
+*.sln
+*.suo
+*.user
+*.sqlsuo
+*.ssmssqlproj
+*.ssmssqlproj.user
+
+# Arquivos de soluções do SSMS
+*.ssmssln
+
 # Python
 __pycache__/
 *.pyc
 venv/
 env/
-*.pyc
 
-# Power BI
-*.pbix
-*.pbit
-
-# Banco de Dados
+# Banco de Dados (arquivos binários)
 *.mdf
 *.ldf
 *.bak
+*.trn
 
 # Sistema
 .DS_Store
@@ -20,7 +32,4 @@ Thumbs.db
 
 # Logs
 *.log
-
-# IDE/Editores
-.vscode/
-.idea/
+EOF
