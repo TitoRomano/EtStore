@@ -1,0 +1,7 @@
+CREATE TABLE  Categoria (
+	CategoriasID INT IDENTITY(1,1) PRIMARY KEY,
+	NomeCategoria VARCHAR(50) NOT NULL UNIQUE,
+	Descricao VARCHAR(200),
+	DataCadastro DATETIME DEFAULT GETDATE(),
+	Ativo BIT DEFAULT 1	
+	);
